@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Thamaraiselvan To DhivyaBharathy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <audio id="bg-music" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="container">
+
+        <div id="intro" class="page active">
+            <h1>Naa Unakaga Onnu Senju Irukan Ammu 🦚✨</h1>
+            <img src="intro.gif" alt="Intro Couple">
+            <h2>Pakuriya ?? 🙈</h2>
+            <div class="btn-group">
+                <button class="btn" onclick="handleYesClick()">YES</button>
+                <button class="btn" onclick="handleNoClick()">NO</button>
+            </div>
+        </div>
+
+        <div id="angry" class="page">
+            <h1>No Lan Illa 😤💔</h1>
+            <img src="no.gif" alt="Angry">
+            <button class="btn" onclick="goToPage('intro')">TRY AGAIN</button>
+        </div>
+
+        <div id="goodgirl" class="page">
+            <h1>Nalla Pondati 😽💙</h1>
+            <img src="good.gif" alt="Good Girl">
+        </div>
+
+        <div id="loading" class="page">
+            <img src="loading.gif" alt="Loading">
+            <h1>Wait Panra Time La Oru Kiss Uh Ummahhh... 😘🪈✨</h1>
+            <div class="progress-container">
+                <div class="progress-bar" id="p-bar"></div>
+            </div>
+        </div>
+
+        <div id="menu" class="page">
+            <h2>Idhu dhan Ammu 👀🦚❤️</h2>
+            <div class="grid">
+                <div class="letter-item" onclick="goToPage('day1')"><img src="letter.gif" alt="Letter 1"><span>Letter 1</span></div>
+                <div class="letter-item" onclick="goToPage('day2')"><img src="letter.gif" alt="Letter 2"><span>Letter 2</span></div>
+                <div class="letter-item" onclick="goToPage('day3')"><img src="letter.gif" alt="Letter 3"><span>Letter 3</span></div>
+                <div class="letter-item" onclick="goToPage('day4')"><img src="letter.gif" alt="Letter 4"><span>Letter 4</span></div>
+                <div class="letter-item" onclick="goToPage('day5')"><img src="letter.gif" alt="Letter 5"><span>Letter 5</span></div>
+                <div class="letter-item" onclick="goToPage('day6')"><img src="letter.gif" alt="Letter 6"><span>Letter 6</span></div>
+                <div class="letter-item" onclick="goToPage('day7')"><img src="letter.gif" alt="Letter 7"><span>Letter 7</span></div>
+                <div class="letter-item" onclick="goToPage('valentine')"><img src="letter.gif" alt="Letter 8"><span>Letter 8</span></div>
+            </div>
+        </div>
+
+        <div id="day1" class="page">
+            <h1>Happy Rose Day Ammu 🌹🦚</h1>
+            <img src="rose.jpg" alt="Rose">
+            <div class="text-box">
+                My love,<br>This red rose carries everything my heart feels when it thinks of you...<br> 
+                A rose may fade with time, but my feelings for you won’t.
+                On this Rose Day, I give you this flower as a promise — to choose you, care for you, and smile with you, always. 🌹💙✨<br>
+                <strong>— Thamaraiselvan to DhivyaBharathy 🪈💙</strong>
+            </div>
+            <button class="btn" onclick="goToPage('menu')">MENU</button>
+        </div>
+
+        <div id="day2" class="page">
+            <h1>Happy Propose Day Ammu 👀💍💙</h1>
+            <img src="propose2.gif" alt="Propose">
+            <div class="text-box">
+                I won’t promise perfection — I promise presence.<br>
+                For your smiles, I’ll be playful. 😄<br>
+                For your tears, I’ll be patient. 🤍<br>
+                For your silence, I’ll listen. 🌙<br>
+                For your storms, I’ll be calm. 🕊️<br>
+                For your dreams, I’ll walk beside you. ✨<br>
+                Like Radha waits for Krishna, my heart waits for your Yes.<br>
+                On this Propose Day, I ask just one thing — let me choose you, in every moment, for everything. 🦚💙<br>
+                <strong>Hey! will you be mine?</strong><br>
+                <strong>— Thamaraiselvan to DhivyaBharathy 🪈💙</strong>
+            </div>
+            <div class="btn-group">
+                <button class="btn" onclick="showPopup()">Yes</button>
+                <button class="btn" onclick="goToPage('cat-knife')">No</button>
+            </div>
+        </div>
+
+        <div id="cat-knife" class="page">
+            <h1>Mudiyadha? Ennala yaethuka Mudiyadhu... 🔪🙀</h1>
+            <img src="reject.gif" alt="Cat Knife">
+            <button class="btn" onclick="goToPage('day2')">Innoru Chance Tharan😄💙</button>
+        </div>
+
+        <div id="day3" class="page">
+            <h1>Happy Chocolate Day Ammu 🍫✨</h1>
+            <img src="chocolate.jpg" alt="Chocolate">
+            <div class="text-box">
+                I know life needs sweetness to survive.<br>
+                Not loud sweetness — but the quiet kind that melts slowly.<br>
+                If love were chocolate, I’d break it into pieces, just to share every little joy with you.<br>
+                Your smile is already sweeter than anything I could give, but still, I offer this — because love tastes better when shared. 🍫😄🪷<br>
+                <strong>— Thamaraiselvan to DhivyaBharathy 🦚💙</strong>
+            </div>
+            <button class="btn" onclick="goToPage('menu')">MENU</button>
+        </div>
+
+        <div id="day4" class="page">
+            <h1>Happy Teddy Day Ammu 🧸💙</h1>
+            <img src="teddy.jpg" alt="Teddy">
+            <div class="text-box">
+                Who said teddys aren't real? I mean just look at you! You are the most adorable teddy!<br>
+                And when the world feels heavy for you, I want to be something soft in your arms.<br>
+                Something that doesn’t question, doesn’t judge, just stays.<br>
+                On days you feel small, tired, or overwhelmed, hold me like a comfort, and remember — you don’t have to be strong all the time. 🧸🤍🌙<br>
+                <strong>— Thamaraiselvan to DhivyaBharathy 🪈💙</strong>
+            </div>
+            <button class="btn" onclick="goToPage('menu')">MENU</button>
+        </div>
+
+        <div id="day5" class="page">
+            <h1>Happy Promise Day Ammu 🤝🕉️</h1>
+            <img src="promise.gif" alt="Promise">
+            <div class="text-box">
+                I don’t promise perfection. I promise presence.<br>
+                I promise to stay even when moods change, when words fail, when silence arrives.<br>
+                I won’t promise that I’ll never make mistakes — but I promise I’ll never stop trying.<br>
+                This is my promise: to choose understanding over ego, and you over everything.” 🤍♾️🦚<br>
+                <strong>I promise to stay by your side forever.</strong><br>
+                <strong>— Thamaraiselvan to DhivyaBharathy 🪈💙</strong>
+            </div>
+            <button class="btn" onclick="goToPage('menu')">MENU</button>
+        </div>
+
+        <div id="day6" class="page">
+            <h1>Happy Hug Day Ammu 🤗🪷</h1>
+            <img src="hug.gif" alt="Hug">
+            <div class="text-box">
+                Sometimes, words aren't enough, and a hug says everything.<br>
+                A hug to let you know I’m here. A hug to make the world feel a little safer.<br>
+                My hug is not to bind you, but to free you from your worries.<br>
+                In my arms, you don’t need answers or strength. Just come as you are.<br>
+                Let my hug say what words cannot — you are safe, you are seen, you are not alone.” 🤗💙✨<br>
+                <strong>— Thamaraiselvan to DhivyaBharathy 🦚💙</strong>
+            </div>
+            <button class="btn" onclick="goToPage('menu')">MENU</button>
+        </div>
+
+        <div id="day7" class="page">
+            <h1>Happy Kiss Day Ammu 💋✨</h1>
+            <img src="kiss.gif" alt="Kiss">
+            <div class="text-box">
+                A kiss that says ‘I choose you’, without needing to say it aloud.<br>
+                Just a soft moment where the world disappears, and it’s only us.” 💋🦚💙<br>
+                <strong>Sending you a thousand kisses today.</strong><br>
+                <strong>— Thamaraiselvan to DhivyaBharathy 🪈💙</strong>
+            </div>
+            <button class="btn" onclick="goToPage('menu')">MENU</button>
+        </div>
+
+        <div id="valentine" class="page">
+            <h1>Happy Valentine's Day Ammu ❤️🪈🪷</h1>
+            <img src="valentinesday.jpg" alt="Postbox">
+            <div class="text-box">
+                I don’t love you because of a day. I love you because my heart knows no other way.<br>
+                In every laugh, every silence, every distance, my love finds you.<br>
+                If loving you is a prayer, then I’ve been praying all along. Not loudly — but endlessly. 🦚💙✨<br>
+                <strong>— Thamaraiselvan to DhivyaBharathy🦚💙</strong>
+            </div>
+            <button class="btn" onclick="goToPage('day7-final')">OPEN</button>
+        </div>
+
+        <div id="day7-final" class="page">
+            <h1>Naa Un Koodave Iruka Enaku Chance Kudupiya Ammu? 🥺💙</h1>
+            <img src="music.png" alt="Collage">
+            <div class="text-box">
+                This song speaks of a vow,<br>
+                but my heart has been living it long before the music began.<br>
+                In every silence, in every storm,<br>
+                I remain steady — choosing you.<br>
+                Not loudly, not dramatically,<br>
+                but with a calm that never leaves. 🌙🤍✨<br>
+                Like the Flute needs Breath, I need You. 🪈<br><br>
+                <strong>I love you my Muttakanni! 👀 Happy Valentine's Day!</strong><br>
+                <strong>— Thamaraiselvan to DhivyaBharathy 🦚🪷</strong>
+            </div>
+            <div class="btn-group">
+                <button class="btn" onclick="goToPage('menu')">MENU</button>
+                <button class="btn" onclick="goToPage('intro')">RESTART</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="custom-popup" class="popup-overlay">
+        <div class="popup-content">
+            <h2>Thamaraiselvan says:</h2>
+            <p>😁 Theriyum di Muttakanni 👀, I love you! DhivyaBharathy ❤️🦚</p>
+            <button class="btn" onclick="closePopup()">Poda Porukki</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
